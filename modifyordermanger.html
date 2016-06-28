@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>后台管理系统-订单管理</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+
+	<body class="bdyr">
+		<div class="indexback">
+			<div class="top">
+				<div class="topin">
+					<div class="logot">
+						<img src="img/toplogo.png" />
+					</div>
+					<span class="edetion">v2.0</span>
+					<ul>
+						<a href="#">
+							<li class="bmtrt">安全退出</li>
+						</a>
+
+					</ul>
+
+					<dl><span>admin</span>超级管理员</dl>
+				</div>
+			</div>
+			<div class="left">
+
+				<div class="left_nav">
+					<li class=""><a href="Index.htm"><i class="lefticont iconone"></i>首页</a></li>
+					<li class=""><a href="shopmana.html"><i class="lefticont icontwo"></i>商品管理</a></li>
+					<li class=""><a href="classification.html"><i class="lefticont iconthree"></i>分类管理</a></li>
+					<li class="navone"><a href="ordermanger.html"><i class="lefticont iconfour"></i>订单管理</a></li>
+					<li class=""><a href="returnmanage.html"><i class="lefticont iconfive"></i>退换货管理</a></li>
+					<li class=""><a href="salesrevenue.html"><i class="lefticont iconsix"></i>销售收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconseven"></i>佣金收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeight"></i>我的分销商</a></li>
+					<li class=""><a href="#"><i class="lefticont iconnine"></i>我的供应商</a></li>
+					<li class=""><a href="shopsetting.html"><i class="lefticont iconten"></i>店铺设置</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeleven"></i>红包活动</a></li>
+					<li class=""><a href="#"><i class="lefticont icontwlve"></i>数据统计</a></li>
+				</div>
+			</div>
+
+			<div class="content">
+				<!--商品管理列表界面 begin-->
+				<div class="listmian">
+					<div class="menumaintr">
+						<!--tag标题 begin-->
+						<ul class="toptablist clearfix">
+							<li><a href="#" class="selected">所有订单</a></li>
+							<li><a href="#" class="">待付款</a></li>
+							<li><a href="#" class="">待发货</a></li>
+							<li><a href="#" class="">已发货</a></li>
+							<li><a href="#" class="">已完成</a></li>
+							<li><a href="#" class="">已取消</a></li>
+						</ul>
+						<!--tag标题 end-->
+
+						<!--二级菜单 begin-->
+						<div class="shopcontent">
+							<div class="tag" style="display:block">
+								<form action="">
+									<div class="orderbox clearfix">
+										<div class="ordertop orderright fl">
+											<span class="opennamer">订单号：</span>
+											<div class="openinputer">
+												<input value="" class="orderwidth">
+											</div>
+										</div>
+										<div class="ordertop orderright fl">
+											<span class="opennamer">下单时间：</span>
+											<div class="openinputer">
+												<input value="" class="openiw">
+												<span class="openline">—</span>
+												<input class="openiw" value="">
+											</div>
+										</div>
+										<div class="ordertop orderright fl">
+											<span class="opennamer">买家：</span>
+											<div class="openinputer">
+												<input value="" class="openiw">
+											</div>
+										</div>
+										<div class="add-producter orderpostion fl">
+											<button type="button">查询</button>
+										</div>
+									</div>
+									<div class="headerlitst clearfix">
+										<ul>
+											<li><a href="#" class="sp-list-icon sp-selectert"></a><span class="qan-selsect">全选</span></li>
+											<li class="sp-btn"><a href="#">取消订单</a></li>
+
+										</ul>
+									</div>
+								</form>
+								<div class="sp-mainen">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+									<tbody>
+									<tr>
+										<th>订单号</th>
+										<th>客户账号</th>
+										<th>收货人姓名</th>
+										<th>收货地址</th>
+										<th>手机号</th>
+										<th>订单总额</th>
+										<th>推广成本</th>
+										<th>订单状态</th>
+										<th>操作</th>
+
+									</tr>
+
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td><span class="orderred">待付款</span></td>
+										<td class="sp-updown"><a href="canclordermanger.html">取消订单</a><a href="orderdetail.html">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor"><span class="orderblue">待发货</span></td>
+										<td class="sp-updown bgcolor"><a href="#">发货</a><a href="canclordermanger.html">取消订单</a><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td><span class="orderblue">已发货</span></td>
+										<td class="sp-updown"><a href="#">修改单号</a><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="bgcolor sp-firstone"><a href="#" class="sp-list-icon ordertopt"></a><span>201504241114</span></td>
+										<td class="bgcolor">13822552255</td>
+										<td class="bgcolor">欧阳李雷</td>
+										<td class="bgcolor">深圳市南山区科兴科学院A23层...</td>
+										<td class="bgcolor">1325544667</td>
+										<td class="bgcolor">2000.00</td>
+										<td class="bgcolor">10</td>
+										<td class="bgcolor orderalgin"><p>已完成</p><p>已评价</p></td>
+										<td class="sp-updown bgcolor"><a href="#">查看订单</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span>DM201504241114</span></td>
+										<td>13822552255</td>
+										<td>欧阳李雷</td>
+										<td>深圳市南山区科兴科学院A23层...</td>
+										<td>13255446677</td>
+										<td>2000.00</td>
+										<td>10</td>
+										<td>已完成</td>
+										<td class="sp-updown"><a href="#">查看订单</a></td>
+									</tr>
+
+									</tbody>
+								</table>
+								</div>
+								<div class="sp-fottertop">
+									<form action="">
+										<div class="headerlitst clearfix">
+											<ul>
+												<li><a href="#" class="sp-list-icon sp-selectert"></a><span class="qan-selsect">全选</span></li>
+												<li class="sp-btn"><a href="#">取消订单</a></li>
+
+
+											</ul>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!--翻页 page begin-->
+							<div class="content_main_button">
+								<div class="page_turning">
+									<ul id="yw0" class="yiiPager clearfix">
+										<li class="first hidden paghovert"><a href="#">首页</a></li>
+										<li class="previous hidden paghovert"><a href="#">上一页</a></li>
+										<li class="page selected"><a href="#">1</a></li>
+										<li class="page"><a href="#">2</a></li>
+										<li class="page"><a href="#">3</a></li>
+										<li class="page"><a href="#">4</a></li>
+										<li class="page"><a href="#">5</a></li>
+										<li class="next paghovert"><a href="#">下一页</a></li>
+										<li class="last paghovert"><a href="#">末页</a></li></ul>
+								</div>
+
+							</div>
+							<!--翻页 page end-->
+						</div>
+
+					</div>
+				</div>
+				<!--商品管理列表界面 end-->
+
+
+
+			</div>
+
+
+
+
+			</div>
+		<div class="footer">版权所有 © 大明网络科技技术支持</div>
+	</body>
+
+	<!--修改单号begin-->
+	<div class="open-bodybg">
+		<div class="open-payment orderheight">
+			<div class="shopbox3 ">
+				<div class="shoptit">
+					<h2 class="title1">修改单号：</h2>
+					<div class="btnclosebox"><a href="ordermanger.html" class="btnclose"><i></i></a></div>
+				</div>
+
+				<div class="openinput">
+					<span class="opennamer openwidth">订单 号：</span>
+					<div class="openinputer">DM201506191124</div>
+				</div>
+				<div class="openinput">
+					<span class="opennamer openwidth">物流公司：</span>
+					<div class="openinputer"><input value="" class="openinputs openwidth3"></div>
+				</div>
+				<div class="openinput">
+					<span class="opennamer openwidth">物流单号：</span>
+					<div class="openinputer"><input value="" class="openinputs openwidth3"></div>
+				</div>
+				<div class="openinput">
+					<span class="opennamer openwidth ordertop2">操作备注：</span>
+					<div class="openinputer"><textarea class="orrderwu">拥有后台一切权限</textarea></div>
+				</div>
+
+
+
+
+				<div class="add-btner openmarig">
+					<button onclick="window.location.href='ordermanger.html'" type="button" class="sucebtn btnwidt">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--修改单号end-->
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>后台管理系统-首页</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+
+	<body class="bdyr">
+		<div class="indexback">
+			<div class="top">
+				<div class="topin">
+					<div class="logot">
+						<img src="img/toplogo.png" />
+					</div>
+					<span class="edetion">v2.0</span>
+					<ul>
+						<a href="Login.html">
+							<li class="bmtrt">安全退出</li>
+						</a>
+
+					</ul>
+
+					<dl><span>admin</span>超级管理员</dl>
+				</div>
+			</div>
+			<div class="left">
+
+				<div class="left_nav">
+					<li class="navone"><a href="Index.html"><i class="lefticont iconone"></i>首页</a></li>
+					<li class=""><a href="shopmana.html"><i class="lefticont icontwo"></i>商品管理</a></li>
+					<li class=""><a href="classification.html"><i class="lefticont iconthree"></i>分类管理</a></li>
+					<li class=""><a href="ordermanger.html"><i class="lefticont iconfour"></i>订单管理</a></li>
+					<li class=""><a href="returnmanage.html"><i class="lefticont iconfive"></i>退换货管理</a></li>
+					<li class=""><a href="salesrevenue.html"><i class="lefticont iconsix"></i>销售收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconseven"></i>佣金收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeight"></i>我的分销商</a></li>
+					<li class=""><a href="#"><i class="lefticont iconnine"></i>我的供应商</a></li>
+					<li class=""><a href="shopsetting.html"><i class="lefticont iconten"></i>店铺设置</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeleven"></i>红包活动</a></li>
+					<li class=""><a href="#"><i class="lefticont icontwlve"></i>数据统计</a></li>
+				</div>
+			</div>
+
+			<div class="content">
+				<!--店铺信息 begin-->
+				<div class="shopmain">
+					<form>
+							<div class="shopbox clearfix">
+								<div class="fl shopphoto"><img src="img/shopphoto.png" alt=""></div>
+								<div class="fl namtiert">
+									<div class="nameedit clearfix">
+										<div class="shopname fl">魅族旗舰店</div>
+										<div class="fr shopdian">
+											<span>店铺信誉值：568</span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+											<span>店铺级别：<i class="d-rec-star star6"></i><a href="#" class="shoemiert veirtf" id="shourt"></a></span>
+											<div class="quiert" style="display: none;">查看各级店铺权益</div>
+										</div>
+									</div>
+									<div class="shopprofile clearfix">
+											<div class="fl sprofile" >
+												<label class="namert">店铺简介：</label>
+												<div class="binrert">
+													魅族科技，成立于2015年5月20日，魅族科技是一个走在文化、时尚前沿且崇尚轻时尚主义的新生代潮流品牌。
+													<a href="#" class="clickedit" id="gied">编辑</a>
+												</div>
+												<div class="writetext" style="display: none">
+													<textarea></textarea>
+													<p><button href="#" id="btnsucert" class="shopiert baocuner">保存</button></p>
+												</div>
+											</div>
+
+									</div>
+
+								</div>
+								<div class="fl shoplistjiao">
+									<div class="shop-icon">
+										<a href="#">
+											<span class="headeradd"></span>
+											<span class="shoptitle">新增商品</span>
+										</a>
+									</div>
+									<div class="shop-icon">
+										<a href="#">
+											<span class="headeradd headfen"></span>
+											<span class="shoptitle">我要分销</span>
+										</a>
+									</div>
+									<div class="shop-icon">
+										<a href="#">
+											<span class="headeradd diorrder"></span>
+											<span class="shoptitle">订单管理</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						<!--店铺信息 begin-->
+					</form>
+					<!--店铺数据概览 begin-->
+					<div class="shopbox2">
+						<div class="nametitle">店铺数据概览</div>
+						<div class="shopbox shoptop clearfix">
+							<ul class="shoptilist">
+								<li>
+									<i>11</i>
+									<span>昨日访客</span>
+								</li>
+								<li>
+									<i>11</i>
+									<span>昨日订单数</span>
+								</li>
+								<li>
+									<i>11</i>
+									<span>昨日成交笔数</span>
+								</li>
+								<li>
+									<i><small>￥</small>30</i>
+									<span>昨日销售收入</span>
+								</li>
+								<li>
+									<i><small>￥</small>2000</i>
+									<span>质保金</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--店铺数据概览 end-->
+
+
+					<!--店铺提醒 begin-->
+					<div class="shopbox2">
+						<div class="nametitle">店铺提醒</div>
+						<div class="shopbox shoptop clearfix shopdope">
+							<p>您有<span class="bierone">1</span>个待发货的订单，请尽快到“<a href="#" class="biertwo">待发货订单</a>”中处理</p>
+							<p>您有<span class="bierone">1</span>个待处理的退换货申请，请尽快到“<a href="#" class="biertwo">退换货管理</a>”中处理</p>
+						</div>
+					</div>
+					<!--店铺提醒 end-->
+				</div>
+
+
+
+
+			</div>
+			</div>
+		<div class="footer">版权所有 © 大明网络科技技术支持</div>
+	</body>
+	<script>
+		//点击
+		$("#shourt").hover(
+				function(){
+					$(".quiert").toggle();
+				});
+
+		//点击显示隐藏
+		$("#gied").click(function(){
+			$(".binrert").hide();
+		});
+		$("#gied").click(function(){
+			$(".writetext").show();
+		});
+		$("#btnsucert").click(function(){
+			$(".writetext").hide();
+		});
+		$("#btnsucert").click(function(){
+			$(".binrert").show();
+		});
+
+		$("textarea").val("介绍一下自己，让更多的人认识你~");
+
+
+	</script>
+
+</html>

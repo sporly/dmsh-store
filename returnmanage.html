@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>后台管理系统-退换货管理</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+
+	<body class="bdyr">
+		<div class="indexback">
+			<div class="top">
+				<div class="topin">
+					<div class="logot">
+						<img src="img/toplogo.png" />
+					</div>
+					<span class="edetion">v2.0</span>
+					<ul>
+						<a href="#">
+							<li class="bmtrt">安全退出</li>
+						</a>
+
+					</ul>
+
+					<dl><span>admin</span>超级管理员</dl>
+				</div>
+			</div>
+			<div class="left">
+
+				<div class="left_nav">
+					<li class=""><a href="Index.htm"><i class="lefticont iconone"></i>首页</a></li>
+					<li class=""><a href="shopmana.html"><i class="lefticont icontwo"></i>商品管理</a></li>
+					<li class=""><a href="classification.html"><i class="lefticont iconthree"></i>分类管理</a></li>
+					<li class=""><a href="ordermanger.html"><i class="lefticont iconfour"></i>订单管理</a></li>
+					<li class="navone"><a href="returnmanage.html"><i class="lefticont iconfive"></i>退换货管理</a></li>
+					<li class=""><a href="salesrevenue.html"><i class="lefticont iconsix"></i>销售收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconseven"></i>佣金收入</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeight"></i>我的分销商</a></li>
+					<li class=""><a href="#"><i class="lefticont iconnine"></i>我的供应商</a></li>
+					<li class=""><a href="shopsetting.html"><i class="lefticont iconten"></i>店铺设置</a></li>
+					<li class=""><a href="#"><i class="lefticont iconeleven"></i>红包活动</a></li>
+					<li class=""><a href="#"><i class="lefticont icontwlve"></i>数据统计</a></li>
+				</div>
+			</div>
+
+			<div class="content">
+				<!--商品管理列表界面 begin-->
+				<div class="listmian">
+					<div class="menumaintr">
+						<!--tag标题 begin-->
+						<ul class="toptablist clearfix">
+							<li><a href="#" class="selected">退换货管理</a></li>
+						</ul>
+						<!--tag标题 end-->
+
+						<!--二级菜单 begin-->
+						<div class="shopcontent">
+							<div class="tag" style="display:block">
+								<form action="">
+									<div class="orderbox clearfix">
+										<div class="ordertop orderright fl">
+											<span class="opennamer">服务单号：</span>
+											<div class="openinputer">
+												<input value="" class="orderwidth">
+											</div>
+										</div>
+										<div class="ordertop orderright fl">
+											<span class="opennamer">退\换：</span>
+											<div class="openinputer">
+												<select class="returnse openwidth3">
+													<option index="2" value="2" selected="">退货</option>
+													<option index="2" value="2" selected="">换货</option>
+													<option index="2" value="2" selected="">全部</option>
+												</select>
+											</div>
+										</div>
+										<div class="ordertop orderright fl">
+											<span class="opennamer">状态：</span>
+											<div class="openinputer">
+												<select class="returnse openwidth3">
+													<option index="2" value="2" selected="">待处理</option>
+													<option index="2" value="2" selected="">申请驳回</option>
+													<option index="2" value="2" selected="">全部</option>
+												</select>
+											</div>
+										</div>
+										<div class="add-producter orderpostion fl">
+											<button type="button">查询</button>
+										</div>
+									</div>
+									<div class="headerlitst clearfix">
+										<ul>
+											<li><a href="#" class="sp-list-icon sp-selectert"></a><span class="qan-selsect">全选</span></li>
+											<li class="sp-btn"><a href="#">删除</a></li>
+
+										</ul>
+									</div>
+								</form>
+								<div class="sp-mainen">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+									<tbody>
+									<tr>
+										<th>服务单号</th>
+										<th>退换货商品</th>
+										<th>所属订单</th>
+										<th>退/换</th>
+										<th>买家</th>
+										<th>状态</th>
+										<th>申请时间</th>
+										<th>操作</th>
+
+									</tr>
+
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="returnmanagedetail.html">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="orderdetail.html">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="rejection.html">驳回申请</a><a href="consentrequest.html">同意申请</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="returnmanagedetail.html">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="refund.html">退款</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"><a href="redelivery.html">重新发货</a></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="confirmreceipt.html">确认收货</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon sp-selectert"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+
+									</tr>
+									<tr>
+										<td class="sp-firstone"><a href="#" class="sp-list-icon"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td>万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td>退货</td>
+										<td>bingchengC</td>
+										<td>待处理</td>
+										<td>20150510  12:25:11</td>
+										<td class="sp-updown"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+									</tr>
+									<tr>
+										<td class="sp-firstone bgcolor"><a href="#" class="sp-list-icon"></a><span class="sp-updown"><a href="#">TH20150509001</a></span></td>
+										<td  class="bgcolor">万向轮行李箱万向轮行李箱万向轮行李</td>
+										<td  class="bgcolor"><span class="sp-updown"><a href="#">DM201506191124</a></span></td>
+										<td  class="bgcolor">退货</td>
+										<td  class="bgcolor">bingchengC</td>
+										<td  class="bgcolor">待处理</td>
+										<td  class="bgcolor">20150510  12:25:11</td>
+										<td class="sp-updown bgcolor"><a href="#">驳回申请</a><a href="#">同意申请</a></td>
+
+									</tr>
+
+
+
+									</tbody>
+								</table>
+								</div>
+								<div class="sp-fottertop">
+									<form action="">
+										<div class="headerlitst clearfix">
+											<ul>
+												<li><a href="#" class="sp-list-icon sp-selectert"></a><span class="qan-selsect">全选</span></li>
+												<li class="sp-btn"><a href="#">删除</a></li>
+
+
+											</ul>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!--翻页 page begin-->
+							<div class="content_main_button">
+								<div class="page_turning">
+									<ul id="yw0" class="yiiPager clearfix">
+										<li class="first hidden paghovert"><a href="#">首页</a></li>
+										<li class="previous hidden paghovert"><a href="#">上一页</a></li>
+										<li class="page selected"><a href="#">1</a></li>
+										<li class="page"><a href="#">2</a></li>
+										<li class="page"><a href="#">3</a></li>
+										<li class="page"><a href="#">4</a></li>
+										<li class="page"><a href="#">5</a></li>
+										<li class="next paghovert"><a href="#">下一页</a></li>
+										<li class="last paghovert"><a href="#">末页</a></li></ul>
+								</div>
+
+							</div>
+							<!--翻页 page end-->
+						</div>
+
+					</div>
+				</div>
+				<!--商品管理列表界面 end-->
+
+
+
+			</div>
+
+
+
+
+			</div>
+		<div class="footer">版权所有 © 大明网络科技技术支持</div>
+	</body>
+	<!--tab切换 begin-->
+
+	<!--tab切换 end-->
+
+</html>
